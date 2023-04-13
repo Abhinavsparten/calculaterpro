@@ -1,0 +1,22 @@
+button{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    
+    width: 32%;
+}
+@media (max-width:800px){
+    #main{
+        
+        width: 314px;
+        margin-left: 10px;       
+    }
+    #clr{
+        width: fit-content;
+    }
+    #bac{
+        width: fit-content;
+    }
+
+}

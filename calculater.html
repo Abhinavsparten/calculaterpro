@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculater.css">
+    <script src="calc.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class=" mainbody border border-secondary container bg-dark text-white p3 mt-5" style=" border-radius: 6%;" id="main">
+       
+            <div class="output">
+                <input type="text" id="screen" class="form-control mt-4 me-2 " style="pointer-events: none;">
+                
+                </div>
+                <div class="buttons">
+                    <div class="row mt-4 me-1 ms-2">
+                        <div class="col-3"> <button onclick="cleardisiplay()" class="btn btn-danger" id="clr">clear</button></div>
+                        <div class="col-3"> <button onclick="back()" class="btn btn-danger" id="bac">back</button></div>
+                    </div>
+                    <div class="row mt-3 me-1 ms-2">
+                        <div class="col-3 "> <button onclick="buttonclick(7)" class="btn btn-primary ">7</button></div>
+                        <div class="col-3 "> <button onclick="buttonclick(8)" class="btn btn-primary ">8</button></div>
+                        <div class="col-3"> <button onclick="buttonclick(9)" class="btn btn-primary ">9</button></div>
+                        <div class="col-3 "> <button onclick="buttonclick('/')" class="btn btn-success ">/</button></div>
+                    </div>
+                    <div class="row mt-3 me-1 ms-2">
+                        <div class="col-3 "> <button onclick="buttonclick(4)" class="btn btn-primary ">4</button></div>
+                        <div class="col-3"> <button onclick="buttonclick(5)" class="btn btn-primary">5</button></div>
+                        <div class="col-3 "> <button onclick="buttonclick(6)" class="btn btn-primary">6</button></div>
+                        <div class="col-3 "> <button onclick="buttonclick('*')" class="btn btn-success">X</button></div>
+                    </div>
+                    <div class="row mt-3 me-1 ms-2">
+                        <div class="col-3"> <button onclick="buttonclick(1)" class="btn btn-primary">1</button></div>
+                        <div class="col-3"> <button onclick="buttonclick(2)" class="btn btn-primary">2</button></div>
+                        <div class="col-3"> <button onclick="buttonclick(3)" class="btn btn-primary">3</button></div>
+                         <div class="col-3"> <button onclick="buttonclick('-')" class="btn btn-success">-</button></div>
+                    </div>
+                    <div class="row mt-3 me-1 ms-2">
+                        <div class="col-3"> <button onclick="buttonclick('.')" class="btn btn-success">.</button></div>
+                        <div class="col-3"> <button onclick="buttonclick(0)" class="btn btn-primary">0</button></div>
+                        <div class="col-3"> <button onclick="buttonclick('+')" class="btn btn-success">+</button></div>
+                        <div class="col-3"> <button onclick="equals()" class="btn btn-success">=</button></div>
+                        <!-- s="hello"
+                        s.slice(0,-1)
+                        output=hell -->
+                    </div>
+                    <div class="mt-4 mb-4" id="a9"> 
+                        <h2 style="font-size: large;" class="text-center">CASIO</h2>
+                    </div>
+                
+            </div>
+        </div>
+
+    
+    
+</body>
+</html>
